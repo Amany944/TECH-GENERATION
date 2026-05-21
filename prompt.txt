@@ -1,0 +1,52 @@
+Crée un site web responsive et moderne "Tech Génération" pour une startup qui forme des jeunes de 6 à 19 ans en programmation, robotique, mécatronique et impression 3D.
+
+Stack technique :
+- HTML5 sémantique et accessible
+- Tailwind CSS via CDN pour un design net et contemporain
+- TypeScript + JavaScript pour l'interactivité
+- Données simulées dans `data.dart` exportant des objets utilisables en module
+- Liens CSS/JS via `<link rel="stylesheet">` et `<script src="">` dans le HTML
+
+Structure du projet :
+/index.html
+/style.css
+/app.ts
+/data.dart
+/assets/images/
+
+Objectif :
+- Produire une landing page professionnelle, percutante et facile à maintenir.
+- Utiliser une approche moderne : sections claires, responsive sur mobile, expérience utilisateur fluide.
+
+Contenu attendu :
+
+1. `index.html`
+   - Header clair avec logo "Tech Génération" et menu de navigation : Accueil, Parcours, Projets, Ressources, Contact
+   - Section Hero attractive avec titre, sous-titre, call-to-action et visuel d’atelier
+   - Section Parcours : 3 cartes distinctes pour les tranches d’âge 6-9, 10-13, 14-19 ans, chacune avec description et exemples de projets
+   - Section Projets : galerie en grille des projets élèves, affichant image, titre et tranche d’âge
+   - Section Ressources : quatre liens vers des tutoriels ou guides pertinents (YouTube / PDF)
+   - Section Contact : formulaire simple (nom, âge, parcours, téléphone) avec validation front-end et message d’envoi via alert
+   - Footer professionnel avec contact WhatsApp, email et adresse
+
+2. `data.dart`
+   - Simule des données avec des exports `parcours`, `projets` et `ressources`
+   - Utilise une syntaxe proche de Dart/JS module pour rester compatible avec l’import TypeScript
+   - Fournit les contenus dynamiques pour `app.ts`
+
+3. `app.ts`
+   - TypeScript propre et typé
+   - Render dynamique des parcours, projets et ressources
+   - Gestion du formulaire de contact avec validation simple
+   - Menu mobile responsive et accessible
+   - Mise en place d’un init global pour charger les sections au chargement de la page
+
+4. `style.css`
+   - Fichier d’override minimal pour Tailwind
+   - Permet l’ajout de styles spécifiques si nécessaire, tout en laissant Tailwind gérer l’essentiel
+
+Exigences :
+- Utiliser Tailwind CSS via CDN : `<script src="https://cdn.tailwindcss.com"></script>`
+- Privilégier les classes utilitaires Tailwind plutôt que du CSS personnalisé
+- Favoriser un rendu moderne, lisible, professionnel, adapté aux standards actuels
+- Conserver une structure claire du code et des fichiers
